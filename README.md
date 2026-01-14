@@ -1,4 +1,4 @@
-# Mintlify CSS
+# Mintlify root/styles.css
 
 This project is very simply the mintlify starter kit but with a custom **styles.css** added to it. The idea behind this demonstration is taht you can tweak the colors, borders, radii and more in styles.css pretty simply without having to locate each one manually yourself.
 
