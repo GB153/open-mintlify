@@ -25,7 +25,7 @@
 
     /* palette */
     --ot-bg: transparent; /* only used when hard reset = 1 */
-    --ot-fg: currentColor; /* lets theme decide */
+    --ot-fg: currentColor; /* theme decides */
 
     --ot-surface: color-mix(in srgb, currentColor 6%, transparent);
     --ot-surface-2: color-mix(in srgb, currentColor 10%, transparent);
