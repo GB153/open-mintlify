@@ -29,31 +29,59 @@ All done! Here are some examples below that only require changing the color sche
 
 ## Images
 
-<figure>
-  <img
-    src="/examples/white_background.png"
-    alt="Mobile (Light mode) – White background"
-    style="max-width: 720px; width: 100%; border-radius: var(--ot-radius-md); border: 1px solid var(--ot-border);"
-  />
-  <figcaption>Mobile (Light mode) – White background</figcaption>
-</figure>
-
-<div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-  <figure style="margin: 0;">
+<div
+  style="
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  "
+>
+  <figure style="margin: 0; text-align: center;">
     <img
-      src="/examples/blue_background.png"
-      alt="Desktop (Dark mode) – Blue background"
-      style="width: 100%; border-radius: var(--ot-radius-md); border: 1px solid var(--ot-border);"
+      src="/example/white_background.png"
+      alt="Mobile (Light mode)"
+      style="
+        width: 100%;
+        max-width: 90px;
+        border-radius: var(--ot-radius-sm);
+        border: 1px solid var(--ot-border);
+      "
     />
-    <figcaption>Desktop (Dark mode) – Blue background</figcaption>
+    <figcaption style="margin-top: 6px; font-size: 0.75rem;">
+      Mobile · Light
+    </figcaption>
   </figure>
 
-  <figure style="margin: 0;">
+  <figure style="margin: 0; text-align: center;">
     <img
-      src="/examples/brown_background.png"
-      alt="Desktop (Dark mode) – Brown background"
-      style="width: 100%; border-radius: var(--ot-radius-md); border: 1px solid var(--ot-border);"
+      src="/example/blue_background.png"
+      alt="Desktop (Dark mode – Blue)"
+      style="
+        width: 100%;
+        max-width: 90px;
+        border-radius: var(--ot-radius-sm);
+        border: 1px solid var(--ot-border);
+      "
     />
-    <figcaption>Desktop (Dark mode) – Brown background</figcaption>
+    <figcaption style="margin-top: 6px; font-size: 0.75rem;">
+      Desktop · Dark (Blue)
+    </figcaption>
+  </figure>
+
+  <figure style="margin: 0; text-align: center;">
+    <img
+      src="/example/brown_background.png"
+      alt="Desktop (Dark mode – Brown)"
+      style="
+        width: 100%;
+        max-width: 90px;
+        border-radius: var(--ot-radius-sm);
+        border: 1px solid var(--ot-border);
+      "
+    />
+    <figcaption style="margin-top: 6px; font-size: 0.75rem;">
+      Desktop · Dark (Brown)
+    </figcaption>
   </figure>
 </div>
