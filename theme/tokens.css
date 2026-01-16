@@ -1,6 +1,7 @@
 :root {
-    --ot-bg: #f4f8f9;
-    --ot-fg: #2d3e50;
+    /* your color variables */
+    --ot-bg: #faf3e0;
+    --ot-fg: #36251e;
 
     --ot-surface: color-mix(in srgb, var(--ot-fg) 5%, transparent);
     --ot-surface-2: color-mix(in srgb, var(--ot-fg) 9%, transparent);
@@ -12,17 +13,31 @@
     --ot-code-bg: color-mix(in srgb, var(--ot-fg) 4%, transparent);
     --ot-focus: color-mix(in srgb, var(--ot-fg) 28%, transparent);
 
-    --ot-radius-xs: 30px;
-    --ot-radius-sm: 30px;
-    --ot-radius-md: 30px;
+    --ot-radius-xs: 0px;
+    --ot-radius-sm: 0px;
+    --ot-radius-md: 0px;
 
     --ot-scrim: color-mix(in srgb, var(--ot-fg) 22%, transparent);
     --ot-scrim-blur: 0px;
+
+    /* your font and sizes */
+    --ot-font-family:
+        "Azeret Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+        "Liberation Mono", "Courier New", monospace;
+
+    --ot-font-body-size: 16px;
+    --ot-font-body-weight: 350;
+
+    --ot-font-head-size: 24px;
+    --ot-font-head-weight: 500;
+
+    --ot-font-mono-size: 0.95em;
 }
 
 html.dark {
-    --ot-bg: #2d3e50;
-    --ot-fg: #f4f8f9;
+    /* invert for simple dark scheme */
+    --ot-bg: #36251e;
+    --ot-fg: #faf3e0;
 
     --ot-scrim: rgba(0, 0, 0, 0.45);
     --ot-scrim-blur: 0px;

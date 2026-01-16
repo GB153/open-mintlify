@@ -32,11 +32,54 @@
 }
 
 /* typography */
+:where(html, body) {
+    font-family: var(--ot-font-family) !important;
+    font-size: var(--ot-font-body-size) !important;
+    font-weight: var(--ot-font-body-weight) !important;
+}
+
+/* headings (size scale from one base token) */
+:where(h1, #page-title) {
+    font-family: var(--ot-font-family) !important;
+    font-size: var(--ot-font-head-size) !important;
+    font-weight: var(--ot-font-head-weight) !important;
+}
+:where(h2) {
+    font-family: var(--ot-font-family) !important;
+    font-size: calc(var(--ot-font-head-size) * 0.8) !important;
+    font-weight: var(--ot-font-head-weight) !important;
+}
+:where(h3) {
+    font-family: var(--ot-font-family) !important;
+    font-size: calc(var(--ot-font-head-size) * 0.66) !important;
+    font-weight: var(--ot-font-head-weight) !important;
+}
+:where(h4) {
+    font-family: var(--ot-font-family) !important;
+    font-size: calc(var(--ot-font-head-size) * 0.58) !important;
+    font-weight: var(--ot-font-head-weight) !important;
+}
+:where(h5) {
+    font-family: var(--ot-font-family) !important;
+    font-size: calc(var(--ot-font-head-size) * 0.52) !important;
+    font-weight: var(--ot-font-head-weight) !important;
+}
+:where(h6) {
+    font-family: var(--ot-font-family) !important;
+    font-size: calc(var(--ot-font-head-size) * 0.48) !important;
+    font-weight: var(--ot-font-head-weight) !important;
+}
+
 :where(h1, h2, h3, h4, h5, h6, #page-title, strong, b) {
     color: var(--ot-fg) !important;
 }
 :where(p, li, span, small, td, th) {
     color: var(--ot-muted) !important;
+}
+
+/* code sizing */
+:where(code, pre, kbd, samp) {
+    font-size: var(--ot-font-mono-size) !important;
 }
 
 /* kill mint primary text */
@@ -106,11 +149,13 @@
 /* cards */
 :where(a.card, a:has([data-component-part="card-content-container"])) {
     background: var(--ot-surface) !important;
-    color: var(--ot-fg) !important;
     border: 1px solid var(--ot-border) !important;
     border-radius: var(--ot-radius-md) !important;
     box-shadow: none !important;
+    text-shadow: none !important;
 }
+
+/* hover */
 :where(
     a.card:hover,
     a:has([data-component-part="card-content-container"]):hover
@@ -118,8 +163,42 @@
     background: var(--ot-surface-2) !important;
     border-color: color-mix(in srgb, var(--ot-fg), transparent 65%) !important;
 }
-:where(a.card *, a:has([data-component-part="card-content-container"]) *) {
+
+:where([data-component-part="card-content-container"]) {
+    background: transparent !important;
+}
+
+:where([data-component-part="card-title"]) {
+    color: var(--ot-fg) !important;
+    font-weight: var(--ot-font-head-weight) !important;
+    opacity: 1 !important;
+}
+
+:where([data-component-part="card-content"]) {
+    margin-top: 10px !important;
+    color: var(--ot-muted) !important;
+    opacity: 0.8 !important;
+}
+
+:where([data-component-part="card-content"]) :where(*, span, p) {
     color: inherit !important;
+    opacity: inherit !important;
+}
+
+:where([data-component-part="card-icon"]) {
+    color: var(--ot-fg) !important;
+}
+:where(#card-link-arrow-icon) {
+    color: var(--ot-muted-2) !important;
+}
+
+/* mask icons inside the card */
+:where(
+    a.card svg[style*="mask-image"],
+    a:has([data-component-part="card-content-container"])
+        svg[style*="mask-image"]
+) {
+    background-color: currentColor !important;
 }
 
 /* icons */
