@@ -1,0 +1,29 @@
+:root {
+    --ot-bg: #faf3e0;
+    --ot-fg: #36251e;
+
+    --ot-surface: color-mix(in srgb, var(--ot-fg) 5%, transparent);
+    --ot-surface-2: color-mix(in srgb, var(--ot-fg) 9%, transparent);
+    --ot-border: color-mix(in srgb, var(--ot-fg) 16%, transparent);
+
+    --ot-muted: color-mix(in srgb, var(--ot-fg) 78%, transparent);
+    --ot-muted-2: color-mix(in srgb, var(--ot-fg) 58%, transparent);
+
+    --ot-code-bg: color-mix(in srgb, var(--ot-fg) 4%, transparent);
+    --ot-focus: color-mix(in srgb, var(--ot-fg) 28%, transparent);
+
+    --ot-radius-xs: 15px;
+    --ot-radius-sm: 15px;
+    --ot-radius-md: 15px;
+
+    --ot-scrim: color-mix(in srgb, var(--ot-fg) 22%, transparent);
+    --ot-scrim-blur: 0px;
+}
+
+html.dark {
+    --ot-bg: #36251e;
+    --ot-fg: #faf3e0;
+
+    --ot-scrim: rgba(0, 0, 0, 0.45);
+    --ot-scrim-blur: 0px;
+}
