@@ -24,7 +24,7 @@ To adjust radius borders for consistent styling, just change the following three
     --ot-radius-md: 15px;
 ```
 
-All done! Here are some examples below that only require changing the color schemes and radii. You are also able to fully customise indiviudal selectors on a case-by-case basis without manually looking for each <div></div> yourself.
+All done! Here are some examples below that only require changing the color schemes and radii. You are also able to fully customise indiviudal selectors on a case-by-case basis without manually looking for each div yourself.
 
 
 ## Images
