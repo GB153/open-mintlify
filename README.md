@@ -26,6 +26,8 @@ To adjust radius borders for consistent styling, just change the following three
 
 All done! Here are some examples below that only require changing the color schemes and radii. You are also able to fully customise indiviudal selectors on a case-by-case basis without manually looking for each div yourself.
 
+For a quick writeup please reference this blog here: https://www.opentools.page/blog/open-mintlify
+
 
 ## Images
 
